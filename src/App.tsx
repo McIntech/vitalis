@@ -1,10 +1,15 @@
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
 import { Hero } from './components/sections/Hero'
+import { Marquee } from './components/sections/Marquee'
 import { ValueProps } from './components/sections/ValueProps'
-import { Products } from './components/sections/Products'
-import { Science } from './components/sections/Science'
+import { Process } from './components/sections/Process'
+import { Catalog } from './components/sections/Catalog'
+import { Stats } from './components/sections/Stats'
+import { Coverage } from './components/sections/Coverage'
 import { Testimonials } from './components/sections/Testimonials'
+import { FAQ } from './components/sections/FAQ'
+import { Social } from './components/sections/Social'
 import { CTA } from './components/sections/CTA'
 
 function App() {
@@ -19,10 +24,15 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Marquee />
         <ValueProps />
-        <Products />
-        <Science />
+        <Process />
+        <Catalog />
+        <Stats />
+        <Coverage />
         <Testimonials />
+        <FAQ />
+        <Social />
         <CTA />
       </main>
       <Footer />
