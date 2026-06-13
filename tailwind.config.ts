@@ -6,33 +6,33 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0F6B47',
-          deep: '#073822',
-          soft: '#1F8C5E',
+          DEFAULT: '#1F2D5C',
+          deep: '#0F1733',
+          soft: '#2D4A8F',
         },
         teal: {
-          DEFAULT: '#0FB89C',
-          deep: '#0A8470',
-          light: '#7FD8C7',
+          DEFAULT: '#2BA76C',
+          deep: '#1F7E50',
+          light: '#6FD4A8',
         },
         coral: {
-          DEFAULT: '#FF7A5C',
-          deep: '#E55A3F',
-          light: '#FFD1C4',
+          DEFAULT: '#EC4899',
+          deep: '#BE2C7A',
+          light: '#FBB6CE',
         },
         sage: {
-          DEFAULT: '#B5D5C4',
-          light: '#D6E7DD',
-          dark: '#7FA992',
+          DEFAULT: '#C5E6D6',
+          light: '#E1F1E8',
+          dark: '#7FB89A',
         },
         accent: {
-          DEFAULT: '#C9A961',
-          deep: '#A8893F',
-          light: '#E4CB94',
+          DEFAULT: '#F5A623',
+          deep: '#C77F0E',
+          light: '#FCD89A',
         },
         violet: {
-          DEFAULT: '#6D28D9',
-          light: '#A78BFA',
+          DEFAULT: '#5B3B95',
+          light: '#8B5FBA',
         },
         surface: {
           cream: '#FAF7F2',
@@ -40,9 +40,9 @@ const config: Config = {
           paper: '#FFFEFB',
         },
         ink: {
-          DEFAULT: '#0E1A16',
-          muted: '#4A5853',
-          soft: '#7A8580',
+          DEFAULT: '#0E1733',
+          muted: '#475569',
+          soft: '#7C879C',
         },
       },
       fontFamily: {
@@ -57,10 +57,10 @@ const config: Config = {
         '4xl': '2rem',
       },
       boxShadow: {
-        soft: '0 1px 2px rgba(10, 77, 51, 0.06), 0 8px 24px rgba(10, 77, 51, 0.08)',
-        glow: '0 0 0 1px rgba(15, 107, 71, 0.12), 0 20px 60px rgba(15, 107, 71, 0.18)',
-        coral: '0 12px 30px rgba(229, 90, 63, 0.28), 0 0 0 1px rgba(229, 90, 63, 0.12)',
-        teal: '0 12px 30px rgba(15, 184, 156, 0.25), 0 0 0 1px rgba(15, 184, 156, 0.15)',
+        soft: '0 1px 2px rgba(31, 45, 92, 0.08), 0 8px 24px rgba(31, 45, 92, 0.10)',
+        glow: '0 0 0 1px rgba(31, 45, 92, 0.12), 0 20px 60px rgba(31, 45, 92, 0.22)',
+        coral: '0 12px 30px rgba(236, 72, 153, 0.32), 0 0 0 1px rgba(236, 72, 153, 0.16)',
+        teal: '0 12px 30px rgba(43, 167, 108, 0.28), 0 0 0 1px rgba(43, 167, 108, 0.18)',
       },
     },
   },

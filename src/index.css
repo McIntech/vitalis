@@ -1,36 +1,42 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #0f6b47;
-  --color-primary-deep: #073822;
-  --color-primary-soft: #1f8c5e;
+  /* Primary — navy blue (Vitalis wordmark) */
+  --color-primary: #1f2d5c;
+  --color-primary-deep: #0f1733;
+  --color-primary-soft: #2d4a8f;
 
-  --color-teal: #0fb89c;
-  --color-teal-deep: #0a8470;
-  --color-teal-light: #7fd8c7;
+  /* "Teal" slot — mint emerald (Medicamina tagline) */
+  --color-teal: #2ba76c;
+  --color-teal-deep: #1f7e50;
+  --color-teal-light: #6fd4a8;
 
-  --color-coral: #ff7a5c;
-  --color-coral-deep: #e55a3f;
-  --color-coral-light: #ffd1c4;
+  /* "Coral" slot — vibrant pink (logo gradient) */
+  --color-coral: #ec4899;
+  --color-coral-deep: #be2c7a;
+  --color-coral-light: #fbb6ce;
 
-  --color-sage: #b5d5c4;
-  --color-sage-light: #d6e7dd;
-  --color-sage-dark: #7fa992;
+  /* Sage — soft mint backgrounds */
+  --color-sage: #c5e6d6;
+  --color-sage-light: #e1f1e8;
+  --color-sage-dark: #7fb89a;
 
-  --color-accent: #c9a961;
-  --color-accent-deep: #a8893f;
-  --color-accent-light: #e4cb94;
+  /* Accent — warm orange (logo head/sun) */
+  --color-accent: #f5a623;
+  --color-accent-deep: #c77f0e;
+  --color-accent-light: #fcd89a;
 
-  --color-violet: #6d28d9;
-  --color-violet-light: #a78bfa;
+  /* Violet — indigo violet (logo bottom gradient) */
+  --color-violet: #5b3b95;
+  --color-violet-light: #8b5fba;
 
   --color-surface-cream: #faf7f2;
   --color-surface-bone: #f1ece3;
   --color-surface-paper: #fffefb;
 
-  --color-ink: #0e1a16;
-  --color-ink-muted: #4a5853;
-  --color-ink-soft: #7a8580;
+  --color-ink: #0e1733;
+  --color-ink-muted: #475569;
+  --color-ink-soft: #7c879c;
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -38,10 +44,10 @@
 
   --radius-4xl: 2rem;
 
-  --shadow-soft: 0 1px 2px rgba(10, 77, 51, 0.06), 0 8px 24px rgba(10, 77, 51, 0.08);
-  --shadow-glow: 0 0 0 1px rgba(15, 107, 71, 0.12), 0 20px 60px rgba(15, 107, 71, 0.18);
-  --shadow-coral: 0 12px 30px rgba(229, 90, 63, 0.28), 0 0 0 1px rgba(229, 90, 63, 0.12);
-  --shadow-teal: 0 12px 30px rgba(15, 184, 156, 0.25), 0 0 0 1px rgba(15, 184, 156, 0.15);
+  --shadow-soft: 0 1px 2px rgba(31, 45, 92, 0.08), 0 8px 24px rgba(31, 45, 92, 0.1);
+  --shadow-glow: 0 0 0 1px rgba(31, 45, 92, 0.12), 0 20px 60px rgba(31, 45, 92, 0.22);
+  --shadow-coral: 0 12px 30px rgba(236, 72, 153, 0.32), 0 0 0 1px rgba(236, 72, 153, 0.16);
+  --shadow-teal: 0 12px 30px rgba(43, 167, 108, 0.28), 0 0 0 1px rgba(43, 167, 108, 0.18);
 }
 
 @layer base {
@@ -95,24 +101,24 @@
 
   .gradient-mesh {
     background:
-      radial-gradient(at 12% 20%, rgba(15, 184, 156, 0.32) 0px, transparent 50%),
-      radial-gradient(at 85% 10%, rgba(255, 122, 92, 0.22) 0px, transparent 55%),
-      radial-gradient(at 70% 80%, rgba(201, 169, 97, 0.25) 0px, transparent 50%),
-      radial-gradient(at 25% 90%, rgba(15, 107, 71, 0.18) 0px, transparent 55%);
+      radial-gradient(at 12% 20%, rgba(43, 167, 108, 0.3) 0px, transparent 50%),
+      radial-gradient(at 85% 10%, rgba(236, 72, 153, 0.25) 0px, transparent 55%),
+      radial-gradient(at 70% 80%, rgba(245, 166, 35, 0.22) 0px, transparent 50%),
+      radial-gradient(at 25% 90%, rgba(91, 59, 149, 0.2) 0px, transparent 55%);
   }
 
   .gradient-text {
-    background: linear-gradient(120deg, #0f6b47 0%, #0fb89c 45%, #ff7a5c 100%);
+    background: linear-gradient(120deg, #1f2d5c 0%, #2ba76c 30%, #ec4899 65%, #f5a623 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
   .glass {
-    background: rgba(255, 254, 251, 0.6);
+    background: rgba(255, 254, 251, 0.62);
     backdrop-filter: blur(14px) saturate(140%);
     -webkit-backdrop-filter: blur(14px) saturate(140%);
-    border: 1px solid rgba(14, 26, 22, 0.06);
+    border: 1px solid rgba(31, 45, 92, 0.06);
   }
 
   .reveal {

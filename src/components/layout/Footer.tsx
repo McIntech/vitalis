@@ -26,9 +26,14 @@ export function Footer() {
     <footer className='border-t border-ink/10 bg-surface-bone'>
       <Container className='grid gap-10 py-16 md:grid-cols-4'>
         <div className='md:col-span-2'>
-          <a href='#inicio' className='flex items-center gap-2 text-ink'>
-            <IconWordmark className='size-9 text-primary' />
-            <span className='font-display text-xl font-semibold tracking-tightest'>Vitalis</span>
+          <a href='#inicio' className='flex items-center gap-2.5 text-ink'>
+            <IconWordmark className='size-10' />
+            <span className='flex flex-col leading-none'>
+              <span className='font-display text-xl font-semibold tracking-tightest text-primary'>Vitalis</span>
+              <span className='mt-0.5 text-[9px] font-semibold uppercase tracking-[0.22em] text-teal-deep'>
+                Medicamina SA de CV
+              </span>
+            </span>
           </a>
           <p className='mt-4 max-w-sm text-sm leading-relaxed text-ink-muted text-pretty'>
             Distribuidora mayorista de medicamentos. Margen, logística y catálogo que mueven tu farmacia hacia adelante.
@@ -99,7 +104,7 @@ export function Footer() {
       </Container>
       <div className='border-t border-ink/10'>
         <Container className='flex flex-col items-center justify-between gap-2 py-6 text-xs text-ink-soft sm:flex-row'>
-          <p>© {new Date().getFullYear()} Vitalis Distribuidora S.A. de C.V.</p>
+          <p>© {new Date().getFullYear()} Vitalis Medicamina S.A. de C.V.</p>
           <p>Aviso de privacidad · COFEPRIS · Términos comerciales</p>
         </Container>
       </div>

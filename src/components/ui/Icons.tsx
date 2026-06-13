@@ -68,10 +68,30 @@ export function IconSparkle({ className = '' }: IconProps) {
 
 export function IconWordmark({ className = '' }: IconProps) {
   return (
-    <svg viewBox='0 0 40 40' className={className} aria-hidden='true' fill='none'>
-      <rect width='40' height='40' rx='10' fill='currentColor' />
-      <path d='M20 10c-4 4-7 8.5-7 13a7 7 0 0 0 14 0c0-4.5-3-9-7-13Z' fill='#C9A961' />
-      <circle cx='20' cy='25' r='2.5' fill='#FAF7F2' />
+    <svg viewBox='0 0 64 64' className={className} aria-hidden='true' fill='none'>
+      <defs>
+        <linearGradient id='vitalisFigure' x1='0' y1='0' x2='64' y2='64' gradientUnits='userSpaceOnUse'>
+          <stop offset='0' stopColor='#2BA76C' />
+          <stop offset='0.32' stopColor='#1F7E50' />
+          <stop offset='0.52' stopColor='#EC4899' />
+          <stop offset='0.78' stopColor='#2D4A8F' />
+          <stop offset='1' stopColor='#5B3B95' />
+        </linearGradient>
+        <linearGradient id='vitalisPill' x1='8' y1='38' x2='56' y2='58' gradientUnits='userSpaceOnUse'>
+          <stop offset='0' stopColor='#1F7E50' />
+          <stop offset='0.5' stopColor='#5B3B95' />
+          <stop offset='1' stopColor='#1F2D5C' />
+        </linearGradient>
+      </defs>
+      {/* pill base */}
+      <rect x='10' y='40' width='44' height='18' rx='9' fill='url(#vitalisPill)' />
+      {/* body with raised arms (Y silhouette) */}
+      <path
+        d='M32 18 C 27 22, 24 28, 24 36 L 17 26 L 14 28 L 24 44 L 24 46 C 24 50, 28 52, 32 52 C 36 52, 40 50, 40 46 L 40 44 L 50 28 L 47 26 L 40 36 C 40 28, 37 22, 32 18 Z'
+        fill='url(#vitalisFigure)'
+      />
+      {/* sun head */}
+      <circle cx='32' cy='14' r='6' fill='#F5A623' />
     </svg>
   )
 }

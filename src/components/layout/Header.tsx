@@ -8,11 +8,13 @@ export function Header() {
   return (
     <header className='sticky top-0 z-40 border-b border-ink/5 glass'>
       <Container as='nav' className='flex items-center justify-between py-4'>
-        <a href='#inicio' className='flex items-center gap-2 text-ink' aria-label='Vitalis — inicio'>
-          <IconWordmark className='size-9 text-primary' />
-          <span className='font-display text-xl font-semibold tracking-tightest'>Vitalis</span>
-          <span className='ml-2 hidden text-[10px] font-medium uppercase tracking-[0.22em] text-coral-deep sm:inline'>
-            · Mayoreo
+        <a href='#inicio' className='flex items-center gap-2.5 text-ink' aria-label='Vitalis Medicamina — inicio'>
+          <IconWordmark className='size-10' />
+          <span className='flex flex-col leading-none'>
+            <span className='font-display text-xl font-semibold tracking-tightest text-primary'>Vitalis</span>
+            <span className='mt-0.5 hidden text-[9px] font-semibold uppercase tracking-[0.22em] text-teal-deep sm:inline'>
+              Medicamina SA de CV
+            </span>
           </span>
         </a>
 
