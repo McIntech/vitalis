@@ -33,8 +33,8 @@ export function CTA() {
             </Reveal>
             <Reveal delay={3}>
               <div className='mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row'>
-                <Button href='mailto:ventas@vitalis.mx' variant='primary'>
-                  Solicita tu lista
+                <Button href='#cotizador' variant='primary'>
+                  Probar el cotizador
                 </Button>
                 <Button href='https://wa.me/528100000000' variant='ghost' className='text-surface-cream'>
                   Hablar por WhatsApp

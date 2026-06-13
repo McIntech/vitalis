@@ -1,6 +1,7 @@
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
 import { IconWordmark } from '../ui/Icons'
+import { HeaderCartBadge } from '../cotizador/HeaderCartBadge'
 import { NAV_LINKS } from '../../data/content'
 
 export function Header() {
@@ -30,7 +31,8 @@ export function Header() {
         </ul>
 
         <div className='flex items-center gap-3'>
-          <Button href='#contacto' variant='primary' className='hidden sm:inline-flex'>
+          <HeaderCartBadge />
+          <Button href='#cotizador' variant='primary' className='hidden sm:inline-flex'>
             Cotizar al mayoreo
           </Button>
         </div>
